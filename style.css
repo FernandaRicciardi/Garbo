@@ -473,6 +473,10 @@ footer {
     font-size: 10px;
   }
 
+  #timeline .timeline-item .timeline-item__year h4 {
+    
+  }
+
   #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
     margin-top: 3vw;
   }
@@ -484,4 +488,18 @@ footer {
   #credit {
     font-size: 0.6em;
   }
+
+  #timeline .timeline-item .timeline-item__year h3 {
+    font-size: 7vw;
+    color: rgba(90, 61, 4, 0.4);
+  }
+  
+  #timeline .timeline-item .timeline-item__year h3::before { /*SMALL SQUARE 0N LEFT LINE*/
+    bottom: 0.75vw;
+    vertical-align: baseline;
+    width: 0.9vw;
+    height: 0.9vw;
+   
+  }
+  
 }
