@@ -445,19 +445,6 @@ footer {
     font-size: 2.4vw;
   }
 
-  #tribute-info p, #timeline {
-    width: 90%;
-    font-size: 2vw;
-  }
-
-  #timeline .timeline-item {
-    margin-bottom: 5vw;
-  }
-
-  #tribute-info p {
-    font-size: 2.8vw;
-  }
-
   #img-caption {
     top: 96%;
     font-size: 1.3vw;
@@ -466,42 +453,56 @@ footer {
 
   #tribute-info h2 {
     font-size: 2.8vw;
-    margin-top: 4vw;
+    margin-top: 5vw;
+  }
+
+  #tribute-info p {
+    width: 90%;
+    font-size: 2.8vw;
+    margin-bottom: 3vw; /*confirmar margem entre os primeiros dois paragrafos*/
   }
 
   #timeline-title h2 {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
+    margin: 2vw;
   }
 
-  #timeline .timeline-item .timeline-item__year h4, #timeline .timeline-item .timeline-item__story p, footer {
-    font-size: 10px;
+  #timeline {
+    width: 90%;
+    margin-top: 15vw;
+    margin-bottom: -3vw;
   }
 
-  #timeline .timeline-item .timeline-item__year h4 {
-    margin-top: 0.1vw;
-  }
-
-  #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
-    margin-top: 3vw;
-  }
-
-  #old-juan__dates, .quote, footer p {
-    display: none;
-  }
-
-  #credit {
-    font-size: 0.6em;
+  #timeline .timeline-item {
+    margin-bottom: 5.5vw;
   }
 
   #timeline .timeline-item .timeline-item__year h3 {
     font-size: 7vw;
     color: rgba(90, 61, 4, 0.4);
   }
-  
-  #timeline .timeline-item .timeline-item__year h3::before { /*SMALL SQUARE 0N LEFT LINE*/
-    bottom: 0.75vw;
-    width: 0.9vw;
-    height: 0.9vw;
+
+  #timeline .timeline-item .timeline-item__year h4 {
+    margin-top: 0.1vw;
+    margin-bottom: 1.5vw;
+    font-size: 2.8vw;
   }
-  
+
+  #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
+    margin-bottom: 3vw; /*confirmar margem */
+    font-size: 2.8vw;
+  }
+
+  #old-juan__dates, .quote, footer p {
+    display: none;
+  }
+
+  footer {
+    font-size: 2.1vw;
+    padding: 2vw;
+  }
+
+  #credit {
+    font-size: 0.6em;
+  }
 }
