@@ -10,4 +10,6 @@ For this project, I used only HTML and CSS. I worked on two different **animatio
 
 Cheers! :wave:
 
+https://fernandaricciardi.github.io/garbo/
+
 ![screenshot](/assets/Screenshot.jpg)
