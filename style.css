@@ -447,7 +447,7 @@ footer {
   }
 
   #img-caption {
-    top: 95%;
+    top: 95.5%;
     font-size: 1.3vw;
     line-height: 1.2;
   }
@@ -462,6 +462,10 @@ footer {
 
   #timeline .timeline-item .timeline-item__year h4, #timeline .timeline-item .timeline-item__story p, footer {
     font-size: 10px;
+  }
+
+  #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
+    margin-top: 2.5vw;
   }
 
   #old-juan__dates, .quote {
