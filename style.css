@@ -198,7 +198,7 @@ body {
   font-size: 1vw;
   letter-spacing: 0.09vw;
   word-spacing: 0.2vw;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
 }
 
 .dropcap { /*J*/
@@ -245,7 +245,7 @@ body {
  
 #timeline-title h2 { /*TIMELINE*/
   position: absolute;
-  top: 3.5vw;
+  top: 4.5vw;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.2vw;
@@ -313,7 +313,25 @@ body {
   word-spacing: 0.2vw;
 }
 
-#timeline .timeline-item .timeline-item__story p { /*each timeline story*/
+#timeline .timeline-item .timeline-item__story .timeline-item__story-p { 
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  padding-left: 1vw;
+  border-left: 0.1vw solid #000;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1vw;
+  letter-spacing: 0.09vw;
+  word-spacing: 0.2vw;
+}
+
+#timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
+  margin-top: 1vw;
+}
+
+/*each timeline story*/
+
+/* #timeline .timeline-item .timeline-item__story p { 
   margin-left: 1vw;
   margin-top: 0.7vw;
   margin-bottom: 1vw;
@@ -324,7 +342,7 @@ body {
   font-size: 1vw;
   letter-spacing: 0.09vw;
   word-spacing: 0.2vw;
-}
+} */
 
 .quote { /*each timeline quotation*/
   box-sizing: border-box;
