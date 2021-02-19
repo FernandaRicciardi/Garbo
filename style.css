@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+
+/***** RESET STYLES *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, /* strong, */ sub, /*sup,*/ tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***** END RESET STYLES *****/
+
+/***** ROOT *****/
+
+:root {
+  --darkbrown: #423c2e;
+  --lightbrown: rgba(90, 61, 4, 0.2);
+  --lighterbrown: rgba(90, 61, 4, 0.1);
+  --whitish: #F3F3F3;
+}
+
+/***** BODY *****/
+
+body {
+  background-color: #8a7d6d;
+  background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+  font-family: 'Cutive', serif;
+}
+
+/***** MAIN *****/
+
+#main {
+  width: 85%;
+  height: auto;
+  margin: 1% auto;
+  background-color: var(--whitish);
+  box-shadow: 0 0 1vw 0.2vw rgb(75, 74, 74);
+}
+
+/***** BANNER *****/
+
+#banner {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  font-family: 'Cutive', serif;
+}
+
+#banner-img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  animation: colourised 3.6s linear forwards;
+}
+
+#title {
+  position: absolute;
+  z-index: 1;
+  top: calc(50%);
+  color: #4B4534;
+  left: 10%;
+  text-align: center;
+}
+
+#title h1 { /*GARBO*/
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 7vw;
+  letter-spacing: 0.3em;
+  text-shadow: 0.08em 0.08em 0.09em #9e9c96;
+}
+
+#title-description {
+  line-height: 1.5;
+  background-color: var(--darkbrown);
+  color: var(--whitish);
+  text-align: center;
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;
+  padding: 0.5em 0;
+  font-size: 2.1vw;
+}
+
+#title-description p { /*The spy that defeated Hitler*/
+  width: 56%;
+  overflow: hidden;
+  border-right: 0.10em solid var(--whitish);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 3.6s steps(30, end),
+    blink-caret 0.5s step-end 8 forwards;
+}
+
+@keyframes typing {
+  from {width: 0}
+  to {width: 56%}
+}
+
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+  50% {border-color: var(--whitish)}
+}
+
+@keyframes colourised {
+  from {filter: grayscale(100%)}
+  to {filter: grayscale(0%)}
+}
+
+/***** IMG INFO *****/
+
+#img-div {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+}
+
+#img-bg {
+  position: absolute;
+  top: 55%;
+  transform: translate( 0%, -50%);
+  width: 100%;
+  height: 10vw;
+  background-color: var(--lightbrown);
+}
+
+#image {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 22%;
+  max-width: 300px;
+  height: auto;
+  background-color: var(--whitish);
+  box-shadow: 0 0 1vw 0.2vw rgb(75, 74, 74);
+  padding: 1vw;
+  padding-bottom: 5vw;
+}
+
+#img-caption { /*Military service in the 7th Light...*/
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  width: 21%;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  line-height: 1.5;
+  color: rgb(68, 67, 67);
+}
+
+/***** TRIBUTE INFO *****/
+
+#tribute-info h2 {
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.2vw;
+  word-spacing: 0.3vw;
+  font-size: 1.8vw;
+  margin: 3vw 0 3vw;
+  font-weight: bolder;
+  color: var(--darkbrown)
+}
+
+#tribute-info p { /*Juan Pujol García, code name Garbo*/
+  width: 60vw;
+  line-height: 1.5;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1vw;
+  letter-spacing: 0.09vw;
+  word-spacing: 0.2vw;
+  margin-bottom: 3vw;
+}
+
+.dropcap { /*J*/
+  font-family: 'Cutive', serif;
+  font-size: 4vw;
+  float: left;
+  margin: 0.4vw 0.4vw 0.4vw 0;
+  line-height: 1;
+  background: var(--darkbrown);
+  color: var(--whitish);
+  padding: 1.4vw;
+}
+
+.dropcap::before,
+.dropcap::after {
+  content: "";
+  display: block;
+}
+
+.dropcap::before {
+  margin-top: -0.2vw;
+}
+
+.dropcap::after {
+  margin-bottom: -0.15vw;
+}
+
+/* dropcap screen reader set*/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/***** TIMELINE *****/
+
+#timeline-title {
+  position: relative;
+}
+ 
+#timeline-title h2 { /*TIMELINE*/
+  position: absolute;
+  top: 3.5vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2vw;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.4vw;
+  font-weight: bolder;
+  background-color: var(--darkbrown);
+  color: var(--whitish);
+  padding: 1.4vw;
+}
+
+#timeline {
+  position: relative;
+	width: 60vw;
+  text-align: justify;
+  margin: 9vw auto 0;
+}
+
+#timeline::before { /*LEFT LINE*/
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 0.2vw;
+	height: calc(100% + 1vw);
+	background: var(--darkbrown);
+}
+
+#timeline .timeline-item {
+  position: relative;
+	margin: 2vw 0 2vw 1vw;
+}
+
+#timeline .timeline-item .timeline-item__year{
+  position: relative;
+}
+
+#timeline .timeline-item .timeline-item__year h3 { /*each timeline year*/
+	font-size: 7vw;
+	color: var(--lighterbrown);
+	font-family: serif;
+	letter-spacing: 0.2vw;
+}
+
+#timeline .timeline-item .timeline-item__year h3::before { /*SMALL SQUARE 0N LEFT LINE*/
+	content: "";
+	position: absolute;
+  box-sizing: border-box;
+  left: -1.4vw;
+	bottom: 0.75vw;
+  transform: translateY(50%);
+	width: 0.9vw;
+	height: 0.9vw;
+	background: var(--whitish);
+	border: 0.2vw solid var(--darkbrown);
+}
+
+#timeline .timeline-item .timeline-item__year h4 { /*each timeline fact*/
+  text-transform: uppercase;
+	margin-top: -1.7vw;
+	font-size: 1.3vw;
+  color: var(--darkbrown);
+  font-weight: bold;
+  letter-spacing: 0.2vw;
+  word-spacing: 0.2vw;
+}
+
+#timeline .timeline-item .timeline-item__story p { /*each timeline story*/
+  margin-left: 1vw;
+  margin-top: 0.7vw;
+  margin-bottom: 1vw;
+  padding-left: 1vw;
+  border-left: 0.1vw solid #000;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1vw;
+  letter-spacing: 0.09vw;
+  word-spacing: 0.2vw;
+}
+
+.quote { /*each timeline quotation*/
+  box-sizing: border-box;
+  background-color: var(--lighterbrown);
+  padding: 1vw;
+  border-radius: 0.4vw;
+  width: 40%;
+  margin-left: 60%;
+  line-height: 1.05;
+  text-align: justify;
+  font-family: serif;
+  font-size: 1vw;
+  letter-spacing: 0.09vw;
+  word-spacing: 0.2vw;
+  margin-bottom: -6vw;
+}
+
+.quote figcaption {
+  margin-top: 0.2vw;
+  text-align: right;
+}
+
+/***** OLD JUAN *****/
+
+#old-juan {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+}
+
+#old-juan__bg {
+  position: absolute;
+  top: 50%;
+  transform: translate( 0%, -50%);
+  width: 100%;
+  height: 10vw;
+  background-color: var(--lightbrown);
+}
+
+#old-juan__pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22%;
+  max-width: 300px;
+  height: auto;
+  background-color: var(--whitish);
+  box-shadow: 0 0 1vw 0.2vw rgb(75, 74, 74);
+  padding: 1vw;
+  padding-bottom: 5vw;
+}
+
+#old-juan__dates {
+  position: absolute;
+  left: 50%;
+  top: 83.5%;
+  transform: translate(-50%, -50%);
+  width: 21%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  line-height: 1.5;
+  color: rgb(68, 67, 67);
+}
+
+/***** FOOTER *****/
+
+footer {
+  line-height: 1.7;
+  font-size: 0.8vw;
+  background-color: var(--darkbrown);
+  color: var(--whitish);
+  text-align: center;
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;
+  padding: 1.3vw;
+}
+
+#tribute-link {
+  color: var(--whitish);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#tribute-link:hover {
+  background: var(--whitish);
+  color: var(--darkbrown);
+}
+
+#credit {
+  border-top: 0.1px solid rgb(165, 163, 163);
+  background-color: rgb(37, 34, 34);
+  font-family: serif;
+  color: rgb(165, 163, 163);
+  padding: 7px;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#credit a {
+  color: rgb(231, 170, 170);
+}
+
+/***** MEDIA QUERY *****/
+
+@media screen and (max-width: 700px) {
+
+  #main {
+    width: 98%;
+  }
+
+  #tribute-info p, #timeline {
+    width: 85%;
+    font-size: 10px;
+  }
+
+  #tribute-info h2 {
+    font-size: 12px;
+  }
+
+  #timeline .timeline-item .timeline-item__year h4, #timeline .timeline-item .timeline-item__story p, footer {
+    font-size: 10px;
+  }
+
+  #img-caption, #old-juan__dates, .quote {
+    visibility: hidden;
+  }
+}
