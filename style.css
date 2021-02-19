@@ -474,7 +474,7 @@ footer {
   }
 
   #timeline .timeline-item .timeline-item__year h4 {
-    
+    margin-top: -0.60vw;
   }
 
   #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
