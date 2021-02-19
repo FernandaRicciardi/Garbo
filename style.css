@@ -406,8 +406,8 @@ footer {
 
 #tribute-link {
   color: var(--whitish);
-  text-transform: uppercase;
-  font-weight: bold;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
 }
 
 #tribute-link:hover {
