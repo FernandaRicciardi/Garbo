@@ -441,23 +441,32 @@ footer {
     width: 98%;
   }
 
+  #title-description {
+    font-size: 2.4vw;
+  }
+
   #tribute-info p, #timeline {
     width: 85%;
-    font-size: 2vw;
+    font-size: 1.8vw;
+  }
+
+  #tribute-info p {
+    font-size: 2.6vw;
   }
 
   #img-caption {
-    top: 95.5%;
+    top: 96%;
     font-size: 1.3vw;
     line-height: 1.2;
   }
 
   #tribute-info h2 {
-    font-size: 12px;
+    font-size: 2.8vw;
+    margin-top: 4vw;
   }
 
   #timeline-title h2 {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
   }
 
   #timeline .timeline-item .timeline-item__year h4, #timeline .timeline-item .timeline-item__story p, footer {
@@ -465,11 +474,11 @@ footer {
   }
 
   #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
-    margin-top: 2.5vw;
+    margin-top: 3vw;
   }
 
-  #old-juan__dates, .quote {
-    visibility: hidden;
+  #old-juan__dates, .quote, footer p {
+    display: none;
   }
 
   #credit {
