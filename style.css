@@ -325,24 +325,9 @@ body {
   word-spacing: 0.2vw;
 }
 
-#timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
+#timeline .timeline-item .timeline-item__story .timeline-item__story-p p { /*each timeline story*/
   margin-top: 1vw;
 }
-
-/*each timeline story*/
-
-/* #timeline .timeline-item .timeline-item__story p { 
-  margin-left: 1vw;
-  margin-top: 0.7vw;
-  margin-bottom: 1vw;
-  padding-left: 1vw;
-  border-left: 0.1vw solid #000;
-  line-height: 1.5;
-  text-align: justify;
-  font-size: 1vw;
-  letter-spacing: 0.09vw;
-  word-spacing: 0.2vw;
-} */
 
 .quote { /*each timeline quotation*/
   box-sizing: border-box;
@@ -458,18 +443,32 @@ footer {
 
   #tribute-info p, #timeline {
     width: 85%;
-    font-size: 10px;
+    font-size: 2vw;
+  }
+
+  #img-caption {
+    top: 95%;
+    font-size: 1.3vw;
+    line-height: 1.2;
   }
 
   #tribute-info h2 {
     font-size: 12px;
   }
 
+  #timeline-title h2 {
+    font-size: 1.5vw;
+  }
+
   #timeline .timeline-item .timeline-item__year h4, #timeline .timeline-item .timeline-item__story p, footer {
     font-size: 10px;
   }
 
-  #img-caption, #old-juan__dates, .quote {
+  #old-juan__dates, .quote {
     visibility: hidden;
+  }
+
+  #credit {
+    font-size: 0.6em;
   }
 }
