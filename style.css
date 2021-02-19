@@ -446,12 +446,16 @@ footer {
   }
 
   #tribute-info p, #timeline {
-    width: 85%;
-    font-size: 1.8vw;
+    width: 90%;
+    font-size: 2vw;
+  }
+
+  #timeline .timeline-item {
+    margin-bottom: 5vw;
   }
 
   #tribute-info p {
-    font-size: 2.6vw;
+    font-size: 2.8vw;
   }
 
   #img-caption {
@@ -474,7 +478,7 @@ footer {
   }
 
   #timeline .timeline-item .timeline-item__year h4 {
-    margin-top: -0.60vw;
+    margin-top: 0.1vw;
   }
 
   #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
@@ -496,10 +500,8 @@ footer {
   
   #timeline .timeline-item .timeline-item__year h3::before { /*SMALL SQUARE 0N LEFT LINE*/
     bottom: 0.75vw;
-    vertical-align: baseline;
     width: 0.9vw;
     height: 0.9vw;
-   
   }
   
 }
