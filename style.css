@@ -223,7 +223,7 @@ body {
 }
 
 .dropcap::after {
-  margin-bottom: -0.15vw;
+  margin-bottom: -0.2vw;
 }
 
 /* dropcap screen reader set*/
@@ -456,15 +456,22 @@ footer {
     margin-top: 5vw;
   }
 
+  .dropcap { /*J*/
+    font-size: 6vw;
+    margin: -1vw 0.4vw 0.4vw 0vw;
+  }
+
   #tribute-info p {
     width: 90%;
     font-size: 2.8vw;
-    margin-bottom: 3vw; /*confirmar margem entre os primeiros dois paragrafos*/
+    margin-bottom: 3vw;
   }
 
   #timeline-title h2 {
     font-size: 2.5vw;
     margin: 2vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #timeline {
@@ -489,7 +496,7 @@ footer {
   }
 
   #timeline .timeline-item .timeline-item__story .timeline-item__story-p p {
-    margin-bottom: 3vw; /*confirmar margem */
+    margin-bottom: 3vw;
     font-size: 2.8vw;
   }
 
