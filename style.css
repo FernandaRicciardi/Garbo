@@ -462,11 +462,11 @@ footer {
   }
 
   .dropcap::before {
-    margin-top: -0.2vw;
+    margin-top: -0.4vw;
   }
   
   .dropcap::after {
-    margin-bottom: -0.2vw;
+    margin-bottom: -0.4vw;
   }
 
   #tribute-info p {
