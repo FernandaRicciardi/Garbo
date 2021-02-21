@@ -441,6 +441,10 @@ footer {
     width: 98%;
   }
 
+  #title-description p {
+    width: 57%;
+  }
+
   #title-description {
     font-size: 2.4vw;
   }
