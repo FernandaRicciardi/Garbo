@@ -480,7 +480,8 @@ footer {
     margin: 2vw;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 2vw;
+    margin-top: 1vw;
+    padding-top: 1vw;
   }
 
   #timeline {
