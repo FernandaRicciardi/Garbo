@@ -461,14 +461,6 @@ footer {
     margin: 1vw 0.4vw 0.4vw 0vw;
   }
 
-  .dropcap::before {
-    margin-top: 0.5vw;
-  }
-  
-  .dropcap::after {
-    margin-bottom: -0.4vw;
-  }
-
   #tribute-info p {
     width: 90%;
     font-size: 2.8vw;
@@ -481,7 +473,6 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 1vw;
-    padding-top: 0.5vw;
   }
 
   #timeline {
