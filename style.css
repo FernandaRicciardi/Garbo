@@ -462,7 +462,7 @@ footer {
   }
 
   .dropcap::before {
-    margin-top: 0vw;
+    margin-top: 1vw;
   }
   
   .dropcap::after {
@@ -480,7 +480,7 @@ footer {
     margin: 2vw;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 0vw;
+    margin-top: 1vw;
   }
 
   #timeline {
